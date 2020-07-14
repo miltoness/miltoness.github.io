@@ -42,7 +42,7 @@ class AboutComponent {
     }
 }
 AboutComponent.ɵfac = function AboutComponent_Factory(t) { return new (t || AboutComponent)(); };
-AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutComponent, selectors: [["app-about"]], decls: 25, vars: 0, consts: [["id", "about", 1, "resume-section", "animate__animated", "animate__fadeInDown"], [1, "resume-section-content"], [1, "mb-0"], [1, "text-primary"], [1, "subheading", "mb-5"], ["href", "mailto:aranda.cerpa@gmail.com"], [1, "lead", "mb-5"], [1, "social-icons"], ["href", "https://cl.linkedin.com/in/cerpa", 1, "social-icon"], [1, "fab", "fa-linkedin-in"], ["href", "#", 1, "social-icon"], [1, "fab", "fa-github"], ["href", "https://www.twitter.com/miltoness", 1, "social-icon"], [1, "fab", "fa-twitter"], ["href", "https://www.facebook.com/miltoness", 1, "social-icon"], [1, "fab", "fa-facebook-f"], ["href", "https://www.instagram.com/miltogram", 1, "social-icon"], [1, "fab", "fa-instagram"]], template: function AboutComponent_Template(rf, ctx) { if (rf & 1) {
+AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutComponent, selectors: [["app-about"]], decls: 25, vars: 0, consts: [["id", "about", 1, "resume-section", "animate__animated", "animate__fadeInDown"], [1, "resume-section-content"], [1, "mb-0"], [1, "text-primary"], [1, "subheading", "mb-5"], ["href", "mailto:aranda.cerpa@gmail.com"], [1, "lead", "mb-5"], [1, "social-icons"], ["href", "https://cl.linkedin.com/in/cerpa", 1, "social-icon"], [1, "fab", "fa-linkedin-in"], ["href", "https://github.com/miltoness", 1, "social-icon"], [1, "fab", "fa-github"], ["href", "https://www.twitter.com/miltoness", 1, "social-icon"], [1, "fab", "fa-twitter"], ["href", "https://www.facebook.com/miltoness", 1, "social-icon"], [1, "fab", "fa-facebook-f"], ["href", "https://www.instagram.com/miltogram", 1, "social-icon"], [1, "fab", "fa-instagram"]], template: function AboutComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "section", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 2);
@@ -58,7 +58,7 @@ AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "p", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Mi nombre es Milton. Soy hijo de chilenos, nascido en Sao Paulo \u2013 Brasil. Desde 2008 escog\u00ED Chile como mi lugar para vivir, por la seguridad que transmite y por las oportunidades laborales.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Mi nombre es Milton. Soy hijo de chilenos, nacido en S\u00E3o Paulo \u2013 Brasil. Desde 2008 escog\u00ED Chile como mi lugar para vivir, por la seguridad que transmite y por las oportunidades que me surgieron tanto acad\u00E9micas como laborales.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "p", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Mi formaci\u00F3n acad\u00E9mica originalmente es del \u00E1rea de telecomunicaciones, pero me aventuro en otras \u00E1reas de las tecnolog\u00EDas de informaci\u00F3n, como el desarrollo y el dise\u00F1o.");
@@ -130,7 +130,7 @@ const routes = [
     { path: 'skills', component: _skills_skills_component__WEBPACK_IMPORTED_MODULE_5__["SkillsComponent"] },
     { path: 'interests', component: _interests_interests_component__WEBPACK_IMPORTED_MODULE_6__["InterestsComponent"] },
     { path: 'awards', component: _awards_awards_component__WEBPACK_IMPORTED_MODULE_7__["AwardsComponent"] },
-    { path: '**', component: _about_about_component__WEBPACK_IMPORTED_MODULE_2__["AboutComponent"] }
+    { path: '**', pathMatch: 'full', redirectTo: 'about' }
 ];
 class AppRoutingModule {
 }
